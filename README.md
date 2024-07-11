@@ -1,6 +1,10 @@
 # Studio SDK Java API Library
 
-[![Maven Central](https://img.shields.io/maven-central/v/com.studio_sdk.api/studio-sdk-java)](https://central.sonatype.com/artifact/com.studio_sdk.api/studio-sdk-java/0.0.1-alpha.0)
+<!-- x-release-please-start-version -->
+
+[![Maven Central](https://img.shields.io/maven-central/v/io.clearstreet.studio/studio-sdk-java)](https://central.sonatype.com/artifact/io.clearstreet.studio/studio-sdk-java/0.0.1-alpha.0)
+
+<!-- x-release-please-end -->
 
 The Studio SDK Java SDK provides convenient access to the Studio SDK REST API from applications written in Java. It includes helper classes with helpful types and documentation for every request and response property.
 
@@ -20,27 +24,31 @@ The REST API documentation can be found [on docs.clearstreet.io](https://docs.c
 
 #### Gradle
 
+<!-- x-release-please-start-version -->
+
 ```kotlin
-implementation("com.studio_sdk.api:studio-sdk-java:0.0.1-alpha.0")
+implementation("io.clearstreet.studio:studio-sdk-java:0.0.1-alpha.0")
 ```
 
 #### Maven
 
 ```xml
 <dependency>
-    <groupId>com.studio_sdk.api</groupId>
+    <groupId>io.clearstreet.studio</groupId>
     <artifactId>studio-sdk-java</artifactId>
     <version>0.0.1-alpha.0</version>
 </dependency>
 ```
+
+<!-- x-release-please-end -->
 
 ### Configure the client
 
 Use `StudioSdkOkHttpClient.builder()` to configure the client. At a minimum you need to set `.bearerToken()`:
 
 ```java
-import com.studio_sdk.api.client.StudioSdkClient;
-import com.studio_sdk.api.client.okhttp.StudioSdkOkHttpClient;
+import io.clearstreet.studio.client.StudioSdkClient;
+import io.clearstreet.studio.client.okhttp.StudioSdkOkHttpClient;
 
 StudioSdkClient client = StudioSdkOkHttpClient.builder()
     .bearerToken("My Bearer Token")
@@ -73,8 +81,8 @@ To create a new entity, first use the `EntityRetrieveParams` builder to specify 
 then pass that to the `retrieve` method of the `entities` service.
 
 ```java
-import com.studio_sdk.api.models.Entity;
-import com.studio_sdk.api.models.EntityRetrieveParams;
+import io.clearstreet.studio.models.Entity;
+import io.clearstreet.studio.models.EntityRetrieveParams;
 
 EntityRetrieveParams params = EntityRetrieveParams.builder()
     .entityId("<your_entity_id>")
@@ -242,7 +250,7 @@ This package generally follows [SemVer](https://semver.org/spec/v2.0.0.html) con
 
 We take backwards-compatibility seriously and work hard to ensure you can rely on a smooth upgrade experience.
 
-We are keen for your feedback; please open an [issue](https://www.github.com/stainless-sdks/studio-sdk-java/issues) with questions, bugs, or suggestions.
+We are keen for your feedback; please open an [issue](https://www.github.com/clear-street/studio-sdk-java/issues) with questions, bugs, or suggestions.
 
 ## Requirements
 
