@@ -3,8 +3,8 @@ plugins {
 }
 
 allprojects {
-    group = "com.studio_sdk.api"
-    version = "0.0.1-alpha.0" 
+    group = "io.clearstreet.studio"
+    version = "0.0.1-alpha.0" // x-release-please-version
 }
 
 nexusPublishing {
