@@ -33,9 +33,9 @@ configure<PublishingExtension> {
                 }
 
                 scm {
-                    connection.set("scm:git:git://github.com/stainless-sdks/studio-sdk-java.git")
-                    developerConnection.set("scm:git:git://github.com/stainless-sdks/studio-sdk-java.git")
-                    url.set("https://github.com/stainless-sdks/studio-sdk-java")
+                    connection.set("scm:git:git://github.com/clear-street/studio-sdk-java.git")
+                    developerConnection.set("scm:git:git://github.com/clear-street/studio-sdk-java.git")
+                    url.set("https://github.com/clear-street/studio-sdk-java")
                 }
 
                 versionMapping {
