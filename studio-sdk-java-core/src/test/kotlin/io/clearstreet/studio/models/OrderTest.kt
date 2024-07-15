@@ -29,7 +29,7 @@ class OrderTest {
                 .orderUpdateReason(Order.OrderUpdateReason.PLACE)
                 .price("x")
                 .referenceId("my-order-id-123")
-                .text("string")
+                .text("text")
                 .build()
         assertThat(order).isNotNull
         assertThat(order.accountId()).isEqualTo("x")
@@ -50,6 +50,6 @@ class OrderTest {
         assertThat(order.orderUpdateReason()).contains(Order.OrderUpdateReason.PLACE)
         assertThat(order.price()).contains("x")
         assertThat(order.referenceId()).contains("my-order-id-123")
-        assertThat(order.text()).contains("string")
+        assertThat(order.text()).contains("text")
     }
 }

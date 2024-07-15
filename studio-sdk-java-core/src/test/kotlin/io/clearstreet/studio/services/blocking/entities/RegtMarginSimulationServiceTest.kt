@@ -23,7 +23,7 @@ class RegtMarginSimulationServiceTest {
             regtMarginSimulationService.create(
                 EntityRegtMarginSimulationCreateParams.builder()
                     .entityId("x")
-                    .name("string")
+                    .name("name")
                     .ignoreExisting(true)
                     .prices(
                         listOf(

@@ -12,7 +12,7 @@ class EntityRegtMarginSimulationCreateParamsTest {
     fun createEntityRegtMarginSimulationCreateParams() {
         EntityRegtMarginSimulationCreateParams.builder()
             .entityId("x")
-            .name("string")
+            .name("name")
             .ignoreExisting(true)
             .prices(
                 listOf(
@@ -42,7 +42,7 @@ class EntityRegtMarginSimulationCreateParamsTest {
         val params =
             EntityRegtMarginSimulationCreateParams.builder()
                 .entityId("x")
-                .name("string")
+                .name("name")
                 .ignoreExisting(true)
                 .prices(
                     listOf(
@@ -71,7 +71,7 @@ class EntityRegtMarginSimulationCreateParamsTest {
                 .build()
         val body = params.getBody()
         assertThat(body).isNotNull
-        assertThat(body.name()).isEqualTo("string")
+        assertThat(body.name()).isEqualTo("name")
         assertThat(body.ignoreExisting()).isEqualTo(true)
         assertThat(body.prices())
             .isEqualTo(
@@ -100,16 +100,16 @@ class EntityRegtMarginSimulationCreateParamsTest {
     @Test
     fun getBodyWithoutOptionalFields() {
         val params =
-            EntityRegtMarginSimulationCreateParams.builder().entityId("x").name("string").build()
+            EntityRegtMarginSimulationCreateParams.builder().entityId("x").name("name").build()
         val body = params.getBody()
         assertThat(body).isNotNull
-        assertThat(body.name()).isEqualTo("string")
+        assertThat(body.name()).isEqualTo("name")
     }
 
     @Test
     fun getPathParam() {
         val params =
-            EntityRegtMarginSimulationCreateParams.builder().entityId("x").name("string").build()
+            EntityRegtMarginSimulationCreateParams.builder().entityId("x").name("name").build()
         assertThat(params).isNotNull
         // path param "entityId"
         assertThat(params.getPathParam(0)).isEqualTo("x")
