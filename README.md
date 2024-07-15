@@ -2,7 +2,7 @@
 
 <!-- x-release-please-start-version -->
 
-[![Maven Central](https://img.shields.io/maven-central/v/io.clearstreet.studio/studio-sdk-java)](https://central.sonatype.com/artifact/io.clearstreet.studio/studio-sdk-java/0.0.1-alpha.0)
+[![Maven Central](https://img.shields.io/maven-central/v/io.clearstreet.studio/studio-sdk-java)](https://central.sonatype.com/artifact/io.clearstreet.studio/studio-sdk-java/0.1.0-alpha.1)
 
 <!-- x-release-please-end -->
 
@@ -27,7 +27,7 @@ The REST API documentation can be found on [docs.clearstreet.io](https://docs.c
 <!-- x-release-please-start-version -->
 
 ```kotlin
-implementation("io.clearstreet.studio:studio-sdk-java:0.0.1-alpha.0")
+implementation("io.clearstreet.studio:studio-sdk-java:0.1.0-alpha.1")
 ```
 
 #### Maven
@@ -36,7 +36,7 @@ implementation("io.clearstreet.studio:studio-sdk-java:0.0.1-alpha.0")
 <dependency>
     <groupId>io.clearstreet.studio</groupId>
     <artifactId>studio-sdk-java</artifactId>
-    <version>0.0.1-alpha.0</version>
+    <version>0.1.0-alpha.1</version>
 </dependency>
 ```
 
