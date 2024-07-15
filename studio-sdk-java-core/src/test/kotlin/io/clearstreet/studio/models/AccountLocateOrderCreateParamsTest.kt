@@ -16,7 +16,7 @@ class AccountLocateOrderCreateParamsTest {
             .quantity("x")
             .referenceId("my-order-id-123")
             .symbol("AAPL")
-            .comments("string")
+            .comments("comments")
             .build()
     }
 
@@ -29,7 +29,7 @@ class AccountLocateOrderCreateParamsTest {
                 .quantity("x")
                 .referenceId("my-order-id-123")
                 .symbol("AAPL")
-                .comments("string")
+                .comments("comments")
                 .build()
         val body = params.getBody()
         assertThat(body).isNotNull
@@ -37,7 +37,7 @@ class AccountLocateOrderCreateParamsTest {
         assertThat(body.quantity()).isEqualTo("x")
         assertThat(body.referenceId()).isEqualTo("my-order-id-123")
         assertThat(body.symbol()).isEqualTo("AAPL")
-        assertThat(body.comments()).isEqualTo("string")
+        assertThat(body.comments()).isEqualTo("comments")
     }
 
     @Test

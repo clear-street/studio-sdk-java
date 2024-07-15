@@ -40,7 +40,7 @@ class PositionServiceTest {
                 AccountPositionListParams.builder()
                     .accountId("x")
                     .pageSize(123L)
-                    .pageToken("string")
+                    .pageToken("page_token")
                     .build()
             )
         println(accountPositionListResponse)

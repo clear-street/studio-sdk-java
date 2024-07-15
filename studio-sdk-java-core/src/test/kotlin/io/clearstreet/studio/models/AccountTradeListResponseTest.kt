@@ -25,7 +25,7 @@ class AccountTradeListResponseTest {
                             .build()
                     )
                 )
-                .nextPageToken("string")
+                .nextPageToken("next_page_token")
                 .build()
         assertThat(accountTradeListResponse).isNotNull
         assertThat(accountTradeListResponse.data())
@@ -41,6 +41,6 @@ class AccountTradeListResponseTest {
                     .symbol("AAPL")
                     .build()
             )
-        assertThat(accountTradeListResponse.nextPageToken()).contains("string")
+        assertThat(accountTradeListResponse.nextPageToken()).contains("next_page_token")
     }
 }

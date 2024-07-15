@@ -10,7 +10,11 @@ class AccountTradeListParamsTest {
 
     @Test
     fun createAccountTradeListParams() {
-        AccountTradeListParams.builder().accountId("x").pageSize(123L).pageToken("string").build()
+        AccountTradeListParams.builder()
+            .accountId("x")
+            .pageSize(123L)
+            .pageToken("page_token")
+            .build()
     }
 
     @Test
@@ -19,11 +23,11 @@ class AccountTradeListParamsTest {
             AccountTradeListParams.builder()
                 .accountId("x")
                 .pageSize(123L)
-                .pageToken("string")
+                .pageToken("page_token")
                 .build()
         val expected = mutableMapOf<String, List<String>>()
         expected.put("page_size", listOf("123"))
-        expected.put("page_token", listOf("string"))
+        expected.put("page_token", listOf("page_token"))
         assertThat(params.getQueryParams()).isEqualTo(expected)
     }
 

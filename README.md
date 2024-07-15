@@ -14,7 +14,7 @@ It is generated with [Stainless](https://www.stainlessapi.com/).
 
 ## Documentation
 
-The REST API documentation can be found [on docs.clearstreet.io](https://docs.clearstreet.io/studio).
+The REST API documentation can be found on [docs.clearstreet.io](https://docs.clearstreet.io/studio).
 
 ---
 

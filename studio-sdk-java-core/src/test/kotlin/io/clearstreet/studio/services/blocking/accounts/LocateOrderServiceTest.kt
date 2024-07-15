@@ -27,7 +27,7 @@ class LocateOrderServiceTest {
                     .quantity("x")
                     .referenceId("my-order-id-123")
                     .symbol("AAPL")
-                    .comments("string")
+                    .comments("comments")
                     .build()
             )
         println(locateOrder)
