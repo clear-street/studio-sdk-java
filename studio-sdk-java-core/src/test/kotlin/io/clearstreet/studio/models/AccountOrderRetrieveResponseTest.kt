@@ -31,7 +31,7 @@ class AccountOrderRetrieveResponseTest {
                         .orderUpdateReason(Order.OrderUpdateReason.PLACE)
                         .price("x")
                         .referenceId("my-order-id-123")
-                        .text("string")
+                        .text("text")
                         .build()
                 )
                 .build()
@@ -57,7 +57,7 @@ class AccountOrderRetrieveResponseTest {
                     .orderUpdateReason(Order.OrderUpdateReason.PLACE)
                     .price("x")
                     .referenceId("my-order-id-123")
-                    .text("string")
+                    .text("text")
                     .build()
             )
     }

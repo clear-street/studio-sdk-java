@@ -32,11 +32,11 @@ class AccountOrderListResponseTest {
                             .orderUpdateReason(Order.OrderUpdateReason.PLACE)
                             .price("x")
                             .referenceId("my-order-id-123")
-                            .text("string")
+                            .text("text")
                             .build()
                     )
                 )
-                .nextPageToken("string")
+                .nextPageToken("next_page_token")
                 .build()
         assertThat(accountOrderListResponse).isNotNull
         assertThat(accountOrderListResponse.data())
@@ -60,9 +60,9 @@ class AccountOrderListResponseTest {
                     .orderUpdateReason(Order.OrderUpdateReason.PLACE)
                     .price("x")
                     .referenceId("my-order-id-123")
-                    .text("string")
+                    .text("text")
                     .build()
             )
-        assertThat(accountOrderListResponse.nextPageToken()).contains("string")
+        assertThat(accountOrderListResponse.nextPageToken()).contains("next_page_token")
     }
 }
