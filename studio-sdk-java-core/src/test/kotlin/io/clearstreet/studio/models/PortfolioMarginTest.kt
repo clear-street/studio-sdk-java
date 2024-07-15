@@ -41,7 +41,7 @@ class PortfolioMarginTest {
                                         .build()
                                 )
                             )
-                            .name("string")
+                            .name("name")
                             .concentrationRequirement(42.23)
                             .discretionaryRequirement(42.23)
                             .liquidityRequirement(42.23)
@@ -64,7 +64,7 @@ class PortfolioMarginTest {
                 .riskBasedRequirementPercent(42.23)
                 .timestamp(1710613560668L)
                 .vegaRequirement(42.23)
-                .version("string")
+                .version("version")
                 .build()
         assertThat(portfolioMargin).isNotNull
         assertThat(portfolioMargin.addOnRequirement()).contains(42.23)
@@ -95,7 +95,7 @@ class PortfolioMarginTest {
                                 .build()
                         )
                     )
-                    .name("string")
+                    .name("name")
                     .concentrationRequirement(42.23)
                     .discretionaryRequirement(42.23)
                     .liquidityRequirement(42.23)
@@ -117,6 +117,6 @@ class PortfolioMarginTest {
         assertThat(portfolioMargin.riskBasedRequirementPercent()).contains(42.23)
         assertThat(portfolioMargin.timestamp()).contains(1710613560668L)
         assertThat(portfolioMargin.vegaRequirement()).contains(42.23)
-        assertThat(portfolioMargin.version()).contains("string")
+        assertThat(portfolioMargin.version()).contains("version")
     }
 }

@@ -69,7 +69,7 @@ class OrderServiceTest {
                     .accountId("x")
                     .from(1710613560668L)
                     .pageSize(123L)
-                    .pageToken("string")
+                    .pageToken("page_token")
                     .to(1710613560668L)
                     .build()
             )

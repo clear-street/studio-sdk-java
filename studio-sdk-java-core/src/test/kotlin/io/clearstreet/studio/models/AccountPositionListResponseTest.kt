@@ -14,11 +14,11 @@ class AccountPositionListResponseTest {
                 .data(
                     listOf(Position.builder().accountId("x").quantity("x").symbol("AAPL").build())
                 )
-                .nextPageToken("string")
+                .nextPageToken("next_page_token")
                 .build()
         assertThat(accountPositionListResponse).isNotNull
         assertThat(accountPositionListResponse.data())
             .containsExactly(Position.builder().accountId("x").quantity("x").symbol("AAPL").build())
-        assertThat(accountPositionListResponse.nextPageToken()).contains("string")
+        assertThat(accountPositionListResponse.nextPageToken()).contains("next_page_token")
     }
 }
